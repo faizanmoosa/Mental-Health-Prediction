@@ -1,8 +1,8 @@
 pandas
 matplotlib
-numpy
+numpy==1.24.2
 Flask
 scikit-learn
 joblib
 Gunicorn
-requests
+requests==2.31.0

@@ -171,6 +171,3 @@ def predict():
         return render_template('output.html', pred='YOU REQUIRE A TREATMENT PLAN AND THE PERCENTAGE OF MENTAL ILLNESS IS {}%.'.format(output))
     else:
         return render_template('output.html', pred='NO TREATMENT PLAN IS REQUIRED AND THE PERCENTAGE OF MENTAL ILLNESS IS {}%.'.format(output))
-
-if __name__ == '__main__':
-    app.run(debug=True)

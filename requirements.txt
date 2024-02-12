@@ -5,3 +5,4 @@ Flask
 scikit-learn
 joblib
 Gunicorn
+requests

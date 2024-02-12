@@ -5,7 +5,6 @@ from datetime import datetime
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
-new_model = pickle.load(open('new_model.pkl', 'rb'))
 
 @app.route('/')
 def index():
@@ -157,13 +156,6 @@ def predict():
     input.extend(mental_vs_physical_vs)
 
     # let's predict
-    # prediction = model.predict([input])
-    # new_prediction = new_model.predict([input])
-    # if(prediction[0] == 0 or new_prediction[0] == 0):
-    #     return render_template('best.html')
-    # else:
-    #     return render_template('worst.html')
-
     prediction=model.predict_proba([input])
     output = '{:.0f}'.format(prediction[0][1] * 100)
 

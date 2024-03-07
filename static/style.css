@@ -68,12 +68,21 @@ input:focus, select:focus {
 body {
     padding: 20px;
 }
-h2 {
-    text-align: center;
-    color: #FFD700;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.centered-div {
+    transform: translateY(-50%);
+}
+li {
+    font-size: 24px;
+    color: #f0f0f0;
     margin-bottom: 20px;
 }
-.predictAgain {
+.predict-again {
     position: fixed;
     bottom: 30px;
     left: 50%;
@@ -87,6 +96,6 @@ h2 {
     cursor: pointer;
     font-weight: bold;
 }
-.predictAgain:hover {
+.predict-again:hover {
     background-color: #f0f0f0;
 }
